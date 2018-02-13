@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({4:[function(require,module,exports) {
+})({2:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -80,7 +80,7 @@ exports.default = {
     return fetch(`http://www.reddit.com/search.json?q=${searchTerm}&sort=${sortBy}&limit=${searchLimit}`).then(res => res.json()).then(data => data.data.children.map(data => data.data));
   }
 };
-},{}],2:[function(require,module,exports) {
+},{}],1:[function(require,module,exports) {
 'use strict';
 
 var _redditapi = require('./redditapi');
@@ -171,4 +171,4 @@ function truncateText(text, limit) {
     if (shortend == -1) return text;
     return text.substring(0, shortend);
 }
-},{"./redditapi":4}]},{},[2])
+},{"./redditapi":2}]},{},[1])
