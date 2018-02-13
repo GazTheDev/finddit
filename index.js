@@ -1,4 +1,4 @@
-import reddit from './redditapi';
+import reddit from 'redditapi';
 
 
 
